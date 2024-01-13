@@ -1,0 +1,466 @@
+
+body, html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 100px;
+   
+  
+    
+   
+    
+}
+ul {
+     
+     list-style-type: none;
+     margin-top: 0%;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+
+     
+     
+}
+
+li.logo{
+    width: 10%;
+    margin-right: 25%;
+   
+}
+li{
+    color: #171A20;
+    text-decoration-line: none;
+    font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 16px;
+    padding-top: 2%;
+    padding-left: 0;
+    padding-right: 2%;
+    margin-bottom: 0%;
+
+}
+a{
+    text-decoration: none;
+}
+div.nav{
+   display: inline;
+}
+div.icons{
+    display: flex;
+    flex-direction: row;
+    color: #171A20;
+
+
+   
+}
+div.second-top{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   margin-bottom: 3%;
+
+
+}
+.inventory{
+    color: #171A20;
+    font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-left: 3%;
+  
+   
+   
+}
+
+
+.navig {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+   width: 40%;
+   margin-right: 5%;
+   
+}
+.sort, .icon-switch, .icon-switch2 {
+    padding: 2%;
+
+}
+select#referrer{
+    border: #f4f4f4;
+    background-color: #f4f4f4;
+
+}
+.sort{
+    background-color: #f4f4f4;
+    font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+ main {
+    width: 100%;
+    height: 1300px;
+    background-color:  #f4f4f4;
+    padding: 0;
+    margin: 0;
+
+ }
+ h1 {
+    color: #5C5E62;
+    font-size: 14px;
+    font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    padding-left: 3%;
+    padding-top: 3%;
+    font-weight: 400;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+
+ }
+ p {
+    color: #5C5E62;
+    font-size: 13px;
+    font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    padding-left: 3%;
+    margin-top: 9px;
+    width: 70%;
+    letter-spacing: 1px;
+
+ }
+ #zip-code{
+    margin-left: 3%;
+ }
+ .models{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+ }
+ h2{
+    color: #5C5E62;
+    font-size: 14px;
+    font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    padding-left: 0;
+    padding-top: 0;
+    font-weight: 400;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+
+ }
+ .cars{
+    color: #5C5E62;
+    font-size: 14px;
+    font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+   
+
+ }
+ div.type{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+    width: 50%;
+    margin-left: 10%;
+    
+ }
+ .section1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 3%;
+ }
+ div.type{
+    padding-left: 7%;
+ }
+ div.trim{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+ }
+ .white{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 3%;
+    border: 1px solid grey;
+ }
+ 
+ 
+ .black{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+ }
+ .blue{
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+ }
+ .red{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+ }
+ .grey{
+    width: 40px;
+    height: 40px;
+    background-color: grey;
+    border-radius: 50%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+ }
+ 
+ .circles{
+    display: flex;
+    flex-direction: row;
+    
+ }
+ .paint{
+    padding-left: 3%;
+ }
+ .color{
+    display: flex;
+    flex-direction: row;
+   
+ }
+.inrerior{
+    padding-left: 3%;
+}
+.wheels{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+
+}
+.history{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+
+}
+.autopilot{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+
+}
+.layout{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+}
+.model{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+
+}
+.white-container{
+    width: 100%;
+    height: 220px;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+   
+}
+.finish{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.section2{
+    padding-right: 1%;
+    width: 100%;
+    margin-top: 4%;
+}
+.left{
+    width: 44%;
+}
+h2#tesla{
+    font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 24px;
+    color: #171A20;
+    text-align:center;
+    padding-top: 4%;
+    font-weight: 500;
+}
+button {
+    display: flex;
+    flex-direction: column;
+    margin-left: 37%;
+    margin-top: 1%;
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 27%;
+    height: auto;
+    text-align: center;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px 5px 5px 5px;
+}
+#zip-code{
+    border: 1px solid white;
+    background-color: white;
+    width: 80%;
+    height: 40px;
+}
+@media (max-width: 600px) {
+    #noshow {
+        display: none;
+    }
+    div.left{
+        display: none;
+    }
+    .white-container{
+        height: 300px;
+
+    }
+    button{
+        
+            width: 70%;
+            margin-left: 16%;
+            margin-top: 5%;
+            padding-left: 14%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            margin-bottom: 0;
+        }
+        h2#tesla{
+            font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+            font-size: 24px;
+            color: #171A20;
+            text-align: center;
+            padding-top: 17%;
+            padding-left: 4%;
+        }
+        .section2 {
+            padding-right: 0;
+           
+        }
+        .inventory{
+            color: #171A20;
+            font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+            font-size: 25px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            padding-left: 3%;
+
+        }
+        ul {
+
+            margin-top: 2%;
+            padding-left: 5%;
+        }
+        header{
+            height: 60px;
+   
+        }
+        div.second-top{
+            width: 95%;
+            height: auto;
+            margin-bottom: 30%;
+            align-items: baseline;
+            margin-right: 15%;
+            padding-left: 3%;
+            
+
+        }
+        .sort {
+            padding: 7%;
+        }
+        div.icon-switch{
+            padding-left: 10%;
+        }
+    }
+    @media (min-width: 601px) and (max-width: 899px){
+    #noshow {
+        display: none;
+    }
+    div.left{
+        display: none;
+    }
+    .white-container{
+        height: 500px;
+
+    }
+    button{
+        
+            width: 70%;
+            margin-left: 16%;
+            margin-top: 5%;
+            padding-left: 20%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+        h2#tesla{
+            font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+            font-size: 24px;
+            color: #171A20;
+            text-align: center;
+            padding-top: 17%;
+            padding-left: 4%;
+        }
+        .section2 {
+            padding-right: 0;
+           
+        }
+        .inventory{
+            color: #171A20;
+            font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+            font-size: 30px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            padding-left: 3%;
+
+        }
+        ul {
+
+            margin-top: 2%;
+            padding-left: 5%;
+        }
+        header{
+            height: 60px;
+   
+        }
+        div.second-top{
+            width: 95%;
+            height: 25px;
+            margin-bottom: 20%;
+            align-items: baseline;
+            margin-right: 15%;
+            padding-left: 3%;
+            
+
+        }
+        .sort {
+            padding: 7%;
+        }
+        div.icon-switch{
+            padding-left: 10%;
+        }
+    }
+    
+  
+    
