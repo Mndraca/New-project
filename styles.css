@@ -7,12 +7,7 @@ body, html{
 }
 header{
     width: 100%;
-    height: 100px;
-   
-  
-    
-   
-    
+    height: 100px;   
 }
 ul {
      
@@ -20,10 +15,36 @@ ul {
      margin-top: 0%;
      display: flex;
      flex-direction: row;
-     justify-content: flex-start;
-
-     
-     
+     justify-content: flex-start;   
+}
+input.box {
+    transform : scale(1.8);
+    padding: 5%;
+    margin-right: 2%;
+}
+input#ModelS.box{
+    margin-right: 10%;
+    margin-bottom: 3%;
+}
+input#Model3.box{
+    margin-right: 10%;
+    margin-bottom: 3%;
+}
+input#Modelx.box{
+    margin-right: 10%;
+    margin-bottom: 3%;
+}
+input#ModelY.box{
+    margin-right: 10%;
+    margin-bottom: 3%;
+}
+input#new.box{
+    margin-right: 8%;
+    padding: 5%;
+}
+input#used.box{
+    margin-right: 8%;
+    padding: 5%;
 }
 
 li.logo{
@@ -35,11 +56,13 @@ li{
     color: #171A20;
     text-decoration-line: none;
     font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     padding-top: 2%;
     padding-left: 0;
     padding-right: 2%;
     margin-bottom: 0%;
+    font-weight: 400;
+    letter-spacing: 1px;
 
 }
 a{
@@ -52,9 +75,14 @@ div.icons{
     display: flex;
     flex-direction: row;
     color: #171A20;
+    height: 40px;
+    
 
 
    
+}
+.mobile-only{
+    display: none;
 }
 div.second-top{
     width: 100%;
@@ -77,34 +105,49 @@ div.second-top{
    
    
 }
+li#noshow.icons{
+    left: 18%;
+    position: relative;
+    width: auto;
+    position: relative;
+    transform: scale(1.2);
+   
+}
 
 
 .navig {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-   width: 40%;
-   margin-right: 5%;
+    width: 40%;
+    margin-right: 5%;
    
 }
 .sort, .icon-switch, .icon-switch2 {
     padding: 2%;
+    
 
 }
 select#referrer{
     border: #f4f4f4;
     background-color: #f4f4f4;
-
+    font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+    color: #5C5E62;
 }
 .sort{
     background-color: #f4f4f4;
     font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     font-weight: 400;
     font-size: 14px;
+    border-radius: 5px 5px 5px 5px;
+    padding-right: 8%;
+    margin-right: 5%;
 }
+
  main {
     width: 100%;
-    height: 1300px;
+    height: 1800px;
     background-color:  #f4f4f4;
     padding: 0;
     margin: 0;
@@ -131,14 +174,20 @@ select#referrer{
     letter-spacing: 1px;
 
  }
- #zip-code{
+ #zip-code {
     margin-left: 3%;
+    border-radius: 5px 5px 5px 5px;
+    padding-left: 5%;
  }
+
  .models{
     display: flex;
     flex-direction: column;
     padding-left: 3%;
- }
+    width: 35%;
+    padding-bottom: 5%;
+}
+ 
  h2{
     color: #5C5E62;
     font-size: 14px;
@@ -154,10 +203,11 @@ select#referrer{
     color: #5C5E62;
     font-size: 14px;
     font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    padding-top: 5%;
    
 
  }
- div.type{
+ div.type {
     display: flex;
     flex-direction: column;
     padding-left: 20%;
@@ -178,7 +228,9 @@ select#referrer{
     display: flex;
     flex-direction: column;
     padding-left: 3%;
+    margin-bottom: 10%;
  }
+
  .white{
     width: 40px;
     height: 40px;
@@ -192,7 +244,7 @@ select#referrer{
  .black{
     width: 40px;
     height: 40px;
-    background-color: black;
+    background-color:black;
     border-radius: 50%;
     margin-left: 2%;
     margin-bottom: 3%;
@@ -200,7 +252,7 @@ select#referrer{
  .blue{
     width: 40px;
     height: 40px;
-    background-color: blue;
+    background-color: #3457b1;
     border-radius: 50%;
     margin-left: 2%;
     margin-bottom: 3%;
@@ -208,7 +260,7 @@ select#referrer{
  .red{
     width: 40px;
     height: 40px;
-    background-color: red;
+    background-color: #b74134;
     border-radius: 50%;
     margin-left: 2%;
     margin-bottom: 3%;
@@ -216,7 +268,7 @@ select#referrer{
  .grey{
     width: 40px;
     height: 40px;
-    background-color: grey;
+    background-color: #a2a3a5;
     border-radius: 50%;
     margin-left: 2%;
     margin-bottom: 3%;
@@ -229,6 +281,7 @@ select#referrer{
  }
  .paint{
     padding-left: 3%;
+    padding-bottom: 5%;
  }
  .color{
     display: flex;
@@ -242,40 +295,46 @@ select#referrer{
     display: flex;
     flex-direction: column;
     padding-left: 3%;
+    padding-bottom: 8%;
 
 }
 .history{
     display: flex;
     flex-direction: column;
     padding-left: 3%;
+    padding-bottom: 8%;
 
 }
 .autopilot{
     display: flex;
     flex-direction: column;
     padding-left: 3%;
+    padding-bottom: 8%;
 
 }
 .layout{
     display: flex;
     flex-direction: column;
     padding-left: 3%;
+    padding-bottom: 8%;
 
 }
 .options{
     display: flex;
     flex-direction: column;
     padding-left: 3%;
+    padding-bottom: 8%;
 }
 .model{
     display: flex;
     flex-direction: column;
     padding-left: 3%;
+    padding-bottom: 8%;
 
 }
 .white-container{
     width: 100%;
-    height: 220px;
+    height: 280px;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
    
@@ -300,7 +359,7 @@ h2#tesla{
     font-size: 24px;
     color: #171A20;
     text-align:center;
-    padding-top: 4%;
+    padding-top: 8%;
     font-weight: 500;
 }
 button {
@@ -308,15 +367,14 @@ button {
     flex-direction: column;
     margin-left: 37%;
     margin-top: 1%;
-    padding-left: 4%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    width: 27%;
-    height: auto;
+    padding-left: 7%;
+    width: 32%;
+    height: 50px;
     text-align: center;
     border: 2px solid black;
     background-color: white;
     border-radius: 5px 5px 5px 5px;
+    justify-content: center;
 }
 #zip-code{
     border: 1px solid white;
@@ -324,9 +382,33 @@ button {
     width: 80%;
     height: 40px;
 }
+#noshoww {
+    display: none;
+}
+@media (max-width: 375px) {
+    h2#noshoww {
+        
+        padding-left: 10%;
+        
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    h2#noshoww {
+        
+        padding-left: 10%;
+        
+    }
+}
 @media (max-width: 600px) {
     #noshow {
         display: none;
+    }
+
+    div#noshoww{
+        display:block;
+        font-size: 21px;
     }
     div.left{
         display: none;
@@ -335,8 +417,44 @@ button {
         height: 300px;
 
     }
-    button{
+    #noshoww{
+        display: flex;
         
+    }
+    #tesla-mobile{
+        margin-top: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 90px;
+    }
+    
+    .price{
+        margin-top: 13%;
+        padding: 8%;
+        width: -webkit-fill-available;
+        padding-left: 3%;
+        border-radius: 4px;
+    }
+   #menu{
+    margin-left: 40%;
+    width: 90%;
+   }
+
+
+    
+    h2#noshoww{
+        font-size: 13px;
+        padding-left: 16%;
+        letter-spacing: 0px;
+        padding-bottom: 5%;
+        margin-top: 0%;
+    }
+    .buttons{
+        font-size: 14px;
+    }
+    button{
+            
             width: 70%;
             margin-left: 16%;
             margin-top: 5%;
@@ -352,6 +470,32 @@ button {
             text-align: center;
             padding-top: 17%;
             padding-left: 4%;
+        }
+        button#noshoww.buttons{
+            border: 1px solid #f4f4f4;
+            background-color: #f4f4f4;
+            margin-bottom: 15%;
+            margin-left: 2%;
+            width: 40%;
+            height: 40px;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        button#noshoww.bbuttons{
+            border: 1px solid #f4f4f4;
+            background-color: #f4f4f4;
+            margin-bottom: 15%;
+            margin-left: 2%;
+            width: 80%;
+            height: 35px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        .mobile-only{
+            display: flex;
+            flex-direction: column;
         }
         .section2 {
             padding-right: 0;
@@ -376,9 +520,10 @@ button {
    
         }
         div.second-top{
+            display: flex;
             width: 95%;
             height: auto;
-            margin-bottom: 30%;
+            margin-bottom: 2%;
             align-items: baseline;
             margin-right: 15%;
             padding-left: 3%;
@@ -387,40 +532,101 @@ button {
         }
         .sort {
             padding: 7%;
+            display: none;
         }
         div.icon-switch{
             padding-left: 10%;
+            padding-right: 20%;
         }
     }
+    
     @media (min-width: 601px) and (max-width: 899px){
-    #noshow {
-        display: none;
-    }
-    div.left{
-        display: none;
-    }
-    .white-container{
-        height: 500px;
-
-    }
-    button{
-        
+        #noshow {
+            display: none;
+        }
+    
+        div#noshoww{
+            display:block;
+            font-size: 21px;
+        }
+        div.left{
+            display: none;
+        }
+        .white-container{
+            height: 550px;
+    
+        }
+        #noshoww{
+            display: flex;
+            
+        }
+        #tesla-mobile{
+            margin-top: 2%;
+            display: flex;
+            flex-direction: row;
+            height: 90px;
+        }
+        select#referrer{
+            border: #f4f4f4;
+            background-color: #f4f4f4;
+            margin-left: 40%;
+            margin-top: 28%;
+            padding-top: 11%;
+            padding-bottom: 11%;
+            padding-left: 30%;
+            padding-right: 100%;
+            border-radius: 5px 5px 5px 5px;
+            width: fit-content;
+}
+        button{
             width: 70%;
-            margin-left: 16%;
-            margin-top: 5%;
-            padding-left: 20%;
+            padding-left: 23%;
             padding-top: 3%;
             padding-bottom: 3%;
             margin-bottom: 0;
-            font-size: 16px;
+            margin-left: 16%;
+            margin-top: 5%;  
+    
         }
-        h2#tesla{
+        h2#noshoww{
+            color: #5C5E62;
+            font-size: 14px;
             font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-            font-size: 24px;
-            color: #171A20;
-            text-align: center;
-            padding-top: 17%;
-            padding-left: 4%;
+            padding-left: 0;
+            padding-top: 3%;
+            font-weight: 400;
+            padding-bottom: 4px;
+            letter-spacing: 1px;
+            margin-left: 30%;
+            padding-bottom: 3%;
+        }
+        button#noshoww.buttons{
+            border: 1px solid #f4f4f4;
+            background-color: #f4f4f4;
+            margin-bottom: 15%;
+            margin-left: 4%;
+            width: 40%;
+            height: 40px;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        button#noshoww.bbuttons{
+            border: 1px solid #f4f4f4;
+            background-color: #f4f4f4;
+            margin-bottom: 15%;
+            margin-left: 33%;
+            width: 45%;
+            height: 35px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            padding-left: 10%;
+
+        }
+        .mobile-only{
+            display: flex;
+            flex-direction: column;
         }
         .section2 {
             padding-right: 0;
@@ -429,8 +635,8 @@ button {
         .inventory{
             color: #171A20;
             font-family: Gotham SSm , -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-            font-size: 30px;
-            font-weight: 500;
+            font-size: 25px;
+            font-weight: 400;
             letter-spacing: 1px;
             padding-left: 3%;
 
@@ -445,22 +651,28 @@ button {
    
         }
         div.second-top{
+            display: flex;
             width: 95%;
-            height: 25px;
-            margin-bottom: 20%;
+            height: auto;
+            margin-bottom: 0;
             align-items: baseline;
             margin-right: 15%;
             padding-left: 3%;
+            margin-top: 5%;
             
 
         }
         .sort {
             padding: 7%;
+            display: none;
         }
         div.icon-switch{
             padding-left: 10%;
+            padding-right: 20%;
         }
+        #menu{
+            margin-left: 40%;
+            width: 90%;
+           }
     }
-    
-  
     

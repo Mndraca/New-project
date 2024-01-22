@@ -30,12 +30,15 @@
                     <li class="icons" id="noshow">
                         <i class="fa-regular fa-circle-user"></i>
                     </li>
+                    <div id="menu"><button id="noshoww" type="menu" class="bbuttons">Menu</button></div>
                 </ul>
             </nav>
         </div>
     </header>
     <div class="second-top">
-    <div class="inventory">Inventory
+    <div class="inventory" id="noshow">Inventory
+    </div>
+    <div class="inventory" id="noshoww"> Used Inventory
     </div>
     <div class="navig">
     <div class="sort">
@@ -56,7 +59,22 @@
         <i class="fa-solid fa-sort"></i>
     </div>
 </div>
-    </div>
+</div>
+<div id="tesla-mobile">
+    <button id="noshoww" type="filter" class="buttons">Filter</button>
+    <div id="noshoww"  class="buttons" >
+        <select id="referrer" name="referrer" class="price">
+          <option value="">Price: low to high</option>
+          <option value="1">Price: high to low</option>
+          <option value="2">Mileage: low to high</option>
+          <option value="3">Mileage: high to low</option>
+          <option value="4">Year: new to old</option>
+          <option value="5">Year: old to new</option>
+          <option value="6">Distance : nearest</option>
+        </select>
+</div>
+</div>
+<h2 id="noshoww">Showing results within 300 miles of 10002</h2>
     <main>
         <div class="finish">
             <div class="left">
@@ -71,22 +89,22 @@
                 <div class="section1">
                 <div class="models">
                     <h2>Models</h2>
-                        <label class="cars"><input id="ModelS" type="radio" name="models-model3-modelx-modely" value="models"> Model S</label>
-                        <label class="cars"><input id="Model3" type="radio" name="models-model3-modelx-modely"  value="model3">  Model 3</label>
-                        <label class="cars"><input id="Modelx" type="radio" name="models-model3-modelx-modely"  value="modelx">  Model X</label>
-                        <label class="cars"><input id="ModelY" type="radio" name="models-model3-modelx-modely"  value="modely">  Model Y</label>
+                        <label class="cars"><input class="box" id="ModelS" type="radio" name="models-model3-modelx-modely" value="models" >  Model S</label>
+                        <label class="cars"><input class="box" id="Model3" type="radio" name="models-model3-modelx-modely"  value="model3">  Model 3</label>
+                        <label class="cars"><input  class="box" id="Modelx" type="radio" name="models-model3-modelx-modely"  value="modelx">  Model X</label>
+                        <label class="cars"><input  class="box" id="ModelY" type="radio" name="models-model3-modelx-modely"  value="modely">  Model Y</label>
                 </div>
                 <div class="type">
                     <p>Inventory type</p>
-                    <label class="cars"><input id="new" type="radio" name="new-used" value="new"> New</label>
-                    <label class="cars"><input id="used" type="radio" name="new-used"  value="udes"> Used</label>
+                    <label class="cars"><input class="box" id="new" type="radio" name="new-used" value="new">New</label>
+                    <label class="cars"><input class="box" id="used" type="radio" name="new-used"  value="udes">Used</label>
                 </div>
                </div>
             <div class="trim">
                 <h2>Trim</h2>
-                <label name="performance" value="Performance" class="cars"><input id="performance" type="checkbox"> Performance All-Wheel Drive</label>
-                <label name="Long-Range" value="Long-Range" class="cars"><input id="Long-Range" type="checkbox"> Long Range All-Wheel Drive</label>
-                <label name="ModelY" value="ModelY" class="cars"> <input id="ModelY" type="checkbox"> Model Y Rear-Wheel Drive</label>
+                <label name="performance" value="Performance" class="cars"><input class="box" id="performance" type="checkbox"> Performance All-Wheel Drive</label>
+                <label name="Long-Range" value="Long-Range" class="cars"><input class="box" id="Long-Range" type="checkbox"> Long Range All-Wheel Drive</label>
+                <label name="Model" value="Model" class="cars"> <input class="box" id="Model" type="checkbox"> Model Y Rear-Wheel Drive</label>
             </div>
             <div class="paint">
                 <h2>Enterior paint</h2>
@@ -108,37 +126,37 @@
             </div>
             <div class="wheels">
                 <h2>Wheels</h2>
-                <label name="19-wheels" value="19-wheels" class="cars"><input  type="checkbox"> 19" Wheels</label>
-                <label name="20-wheels"  value="20-wheels" class="cars"><input  type="checkbox"> 20" Wheels</label>
-                <label name="21-wheels"value="21-wheels" class="cars"> <input type="checkbox"> 21" Wheels</label>
+                <label name="19-wheels" value="19-wheels" class="cars"><input class="box" type="checkbox"> 19" Wheels</label>
+                <label name="20-wheels"  value="20-wheels" class="cars"><input class="box" type="checkbox"> 20" Wheels</label>
+                <label name="21-wheels"value="21-wheels" class="cars"> <input class="box" type="checkbox"> 21" Wheels</label>
             </div>
             <div class="history">
                 <h2>Vehicle History</h2>
-                <label name="Damage" value="Damage" class="cars"><input type="checkbox"> No Reported Accidents/Damage</label>
-                <label name="Repaired" value="Repaired" class="cars"><input type="checkbox"> Previously Repaired</label>
+                <label name="Damage" value="Damage" class="cars"><input class="box" type="checkbox"> No Reported Accidents/Damage</label>
+                <label name="Repaired" value="Repaired" class="cars"><input class="box" type="checkbox"> Previously Repaired</label>
             </div>
             <div class="autopilot">
                 <h2>Autopilot</h2>
-                <label name="Autopilot" value="Autopilot" class="cars"><input  type="checkbox"> Autopilot</label>
-                <label name="Enhanced" value="Enhanced" class="cars"><input  type="checkbox"> Enhanced Autopilot</label>
-                <label name="Self-Driving" value="Self-Driving" class="cars"> <input type="checkbox"> Full Self Driving</label>
+                <label name="Autopilot" value="Autopilot" class="cars"><input class="box"  type="checkbox"> Autopilot</label>
+                <label name="Enhanced" value="Enhanced" class="cars"><input class="box"  type="checkbox"> Enhanced Autopilot</label>
+                <label name="Self-Driving" value="Self-Driving" class="cars"> <input class="box" type="checkbox"> Full Self Driving</label>
             </div>
             <div class="layout">
                 <h2>Seat Layout</h2>
-                <label name="five-seat" value="five-seat" class="cars"><input type="checkbox"> Five Seat Interior</label>
-                <label name="seven-seat" value="seven-seat" class="cars"><input type="checkbox"> Seven Seat Interior</label>
+                <label name="five-seat" value="five-seat" class="cars"><input class="box" type="checkbox"> Five Seat Interior</label>
+                <label name="seven-seat" value="seven-seat" class="cars"><input class="box" type="checkbox"> Seven Seat Interior</label>
             </div>
             <div class="options">
                 <h2>Additional Options</h2>
-                <label name="performance" value="Performance" class="cars"><input type="checkbox"> Performance Upgrade</label>
-                <label name="Long-Range" value="Long-Range" class="cars"><input type="checkbox"> Tow Hitch</label>
-                <label name="ModelY" value="ModelY" class="cars"> <input  type="checkbox"> Acceleration Boost</label>
+                <label name="performance" value="Performance" class="cars"><input class="box" type="checkbox"> Performance Upgrade</label>
+                <label name="Long-Range" value="Long-Range" class="cars"><input class="box" type="checkbox"> Tow Hitch</label>
+                <label name="ModelY" value="ModelY" class="cars"> <input class="box"  type="checkbox"> Acceleration Boost</label>
             </div>
             <div class="model">
                 <h2>Model Year</h2>
-                <label name="performance" value="Performance" class="cars"><input type="checkbox"> 2022</label>
-                <label name="Long-Range" value="Long-Range" class="cars"><input type="checkbox"> 2021</label>
-                <label name="ModelY" value="ModelY" class="cars"> <input  type="checkbox"> 2020</label>
+                <label name="performance" value="Performance" class="cars"><input class="box" type="checkbox"> 2022</label>
+                <label name="Long-Range" value="Long-Range" class="cars"><input class="box" type="checkbox"> 2021</label>
+                <label name="ModelY" value="ModelY" class="cars"> <input class="box"  type="checkbox"> 2020</label>
             </div>
             </section>
             </div>
